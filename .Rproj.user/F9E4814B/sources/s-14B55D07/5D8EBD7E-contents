@@ -1,0 +1,31 @@
+---
+title: "Natural kinds statistical analysis"
+output: html_document
+date: '2023-03-01'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source(here::here("scripts", "00_libs.R"))
+source(here::here("scripts", "02_load_data.R"))
+```
+
+## Multinomial results
+
+```{r}
+#| label: three-post
+#| fig.cap: This is a caption
+knitr::include_graphics(here("figs", "three_choice_posterior.png"))
+```
+
+See Figure @three-post
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

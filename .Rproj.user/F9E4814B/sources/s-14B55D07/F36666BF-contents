@@ -1,0 +1,11 @@
+
+rating_data = read.csv(here("data", "tidy", "rating_data_tidy.csv"))
+
+three_choice_data = read.csv(here("data", "tidy", "three_choice_data.csv"))
+
+four_choice_data = 
+  read.csv(here("data", "tidy", "four_choice_data.csv"))
+
+ord_mod = readRDS(here("models", "ord_mod.rds"))
+
+multinom_mod = readRDS(here("models", "multinom_mod.rds"))
